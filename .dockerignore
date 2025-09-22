@@ -1,0 +1,77 @@
+# .dockerignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation
+README.md
+docs/
+*.md
+
+# Logs
+*.log
+api_security.log
+
+# Tests (optional - you might want to include tests in container)
+tests/
+.pytest_cache/
+.coverage
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Deployment configs
+render.yaml
+fly.toml
+.github/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local development files
+.env.local
+.env.development
