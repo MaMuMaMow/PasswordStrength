@@ -1,14 +1,19 @@
-# 🔐 Password Strength Checker API
+# Password Strength Checker API
 
-Simple API built with **FastAPI** to check password strength.  
+API source code built with **FastAPI** to check password strength.  
 Includes security headers, rate limiting, and ready-to-deploy Docker support.
 
----
+## Warning
 
-## 🚀 Features
+- this project is build for learning security for APIs and how APIs work.
+  I've already make the code easier for reading, so please check it carefully before you use it in your own website.
 
-- ✅ Check password strength via API
-- ✅ Security middleware (anti-XSS, clickjacking protection, MIME sniffing protection, HSTS)
-- ✅ Rate limiting with [SlowAPI](https://pypi.org/project/slowapi/)
-- ✅ Dockerfile included
-- ✅ Ready for deployment on Render / Fly.io / Vercel
+## Features
+
+- Check passwords strength via API. (pwned, length, special characters, and more).
+- Basic security middleware. (anti-XSS, clickjacking protection, MIME sniffing protection, HSTS).
+- Rate limiting by **SlowAPI**.
+- Dockerfile included.
+- Ready for deployment on Vercel, Render, and Fly.io
+
+## How to Get start?
