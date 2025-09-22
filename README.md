@@ -3,8 +3,6 @@
 API source code built with **FastAPI** to check password strength.  
 Includes security headers, rate limiting, and ready-to-deploy Docker support.
 
----
-
 ## Features
 
 - Check passwords strength via API. (pwned, length, special characters, and more).
@@ -13,19 +11,16 @@ Includes security headers, rate limiting, and ready-to-deploy Docker support.
 - Dockerfile included.
 - Ready for deployment on Vercel, Render, and Fly.io
 
----
-
-## Warning
-
----
-
 ## How to Get start?
 
----
+### Warning
+
+Don't forget to check these :
+
+- CORS policies
+- Rate limite
 
 ## Note
 
-this project is build for learning security for APIs and how APIs work.
+This project was build for learning how APIs work.
 Please check the code carefully before you use it in your own website.
-
----
