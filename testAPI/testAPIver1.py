@@ -3,7 +3,7 @@ import json
 
 #_______________________________input__________________________________________
 try:
-    url = "http://127.0.0.1:8000/checkStrength"
+    url = "https://passwordstrength.onrender.com/checkStrength"
     password = input("Enter your password : ")
     payload = {"password": password}
     response = requests.post(url, json=payload) #the API have input and output as JSON. So you have to request as JSON
