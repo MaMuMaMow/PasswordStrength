@@ -5,32 +5,56 @@ Includes security headers, rate limiting, and ready-to-deploy Docker support.
 
 ## Features
 
-- Check passwords strength via API. (pwned, length, special characters, and more).
+- Check passwords strength via API. (length, special characters, pwned passwords, etc.).
 - Basic security middleware. (anti-XSS, clickjacking protection, MIME sniffing protection, HSTS).
-- Rate limiting by **SlowAPI**.
+- Rate limiting with **SlowAPI**.
 - Dockerfile included.
 - Ready for deployment on Render.
 
-## How to Get start?
+## Getting start
 
-### clone project
+### Clone project
 
-1. run **$git clone https://github.com/MaMuMaMow/PasswordStrength** on your Git Bash terminal. this will clone the project floder
-2. run **cd PasswordStrength** on your cmd and then follow by **python -m venv venv**
-3. if you use Linux / Mac. Run **source venv/bin/activate**.
-   if you use Window run **venv\Scripts\activate** instead.
+1. Clone the repository
+   ```bash
+   git clone https://github.com/MaMuMaMow/PasswordStrength
+   ```
+2. Create a virtual environment by :
+   ```cmd
+   cd PasswordStrength
+   python -m venv venv
+   ```
+3. To activate the environment :
 
-4. loading libaries **-pip install -r requirements.txt**
+- on Linux / Mac :
+  ```cmd
+  source venv/bin/activate
+  ```
+- on Window run :
+  ```cmd
+  venv\Scripts\activate
+  ```
 
-5. run the project by **uvicorn main:app --reload**. and test the project by run the file in testAPI folder.
+4. Install dependencies :
+
+   ```cmd
+   -pip install -r requirements.txt
+   ```
+
+5. Run the project :
+   ```cmd
+   uvicorn main:app --reload
+   ```
+
+- Optional : try test the project by run the script inside the testAPI folder
 
 ## Note
 
 1. This project was build for learning how APIs work.
-   Please check the code carefully before you use it in your own website.
+   Please review the code carefully before using it in production.
 
-2. CORS polices
+2. in case you deploy this on your own website. Make sure to change CORS polices in main.py (line 48)
 
-3. Rate limite
+3. Rate limite can also be adjust in main.py (line 105)
 
-Thank you for your attention!
+### Thank you for your attention!
