@@ -9,21 +9,28 @@ Includes security headers, rate limiting, and ready-to-deploy Docker support.
 - Basic security middleware. (anti-XSS, clickjacking protection, MIME sniffing protection, HSTS).
 - Rate limiting by **SlowAPI**.
 - Dockerfile included.
-- Ready for deployment on Vercel, Render, and Fly.io
+- Ready for deployment on Render.
 
 ## How to Get start?
 
-### Warning
+### clone project
 
-Don't forget to :
+1. run **$git clone https://github.com/MaMuMaMow/PasswordStrength** on your Git Bash terminal. this will clone the project floder
+2. run **cd PasswordStrength** on your cmd and then follow by **python -m venv venv**
+3. if you use Linux / Mac. Run **source venv/bin/activate**.
+   if you use Window run **venv\Scripts\activate** instead.
 
-CORS policies
+4. loading libaries **-pip install -r requirements.txt**
 
-Rate limite
+5. run the project by **uvicorn main:app --reload**. and test the project by run the file in testAPI folder.
 
 ## Note
 
-This project was build for learning how APIs work.
-Please check the code carefully before you use it in your own website.
+1. This project was build for learning how APIs work.
+   Please check the code carefully before you use it in your own website.
+
+2. CORS polices
+
+3. Rate limite
 
 Thank you for your attention!
