@@ -45,7 +45,7 @@ logging.basicConfig(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:8000"],       #fix CORS policy here
+    allow_origins=["*"],       #fix CORS policy here
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -15,12 +15,15 @@ Includes security headers, rate limiting, and ready-to-deploy Docker support.
 
 ### Warning
 
-Don't forget to check these :
+Don't forget to :
 
-- CORS policies
-- Rate limite
+CORS policies
+
+Rate limite
 
 ## Note
 
 This project was build for learning how APIs work.
 Please check the code carefully before you use it in your own website.
+
+Thank you for your attention!
