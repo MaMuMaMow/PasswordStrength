@@ -3,9 +3,11 @@ import json
 
 #_______________________________input__________________________________________
 try:
-    url = "https://" #change URL here.
+    url = "http://(your url)/checkStrength" #change URL here. for exmple : http://127.0.0.1:8000/checkStrength
     password = input("Enter your password : ")
-    payload = {"password": password}
+    payload = {"password": password,
+               "request_id": "test123"  #optional
+               }
     response = requests.post(url, json=payload) #the API have input and output as JSON. So you have to request as JSON
     response.raise_for_status()
     data = response.json()
